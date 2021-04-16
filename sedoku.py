@@ -29,9 +29,9 @@ ver = []
 smallsedoku = []
 for i in range(0,9):
     for j in range(0,9):
-        row[i][j] = j
-        ver[i][j] = j
-        smallsedoku[i][j] = j
+        row[i][j] = j+1
+        ver[i][j] = j+1
+        smallsedoku[i][j] = j+1
 row  = [[i/9-1][a[i]]= true for i in a]#0을 제외하고
 ver = [[i%9-1][a[i]]= true for i in a]#0을 제외하고
 smallsedoku = [[small(i)][a[i]]=true for i in a]]#0을 제외하고
@@ -44,12 +44,12 @@ def sedouku(depth):
             if  depth == len(zerocount):
                 break
             for j in range(0,9):
-                if  j == row[[zerocount[i]]/9-1][j] == ver[zerocount[i]%9-1][j] == smallsedoku[small[i]][j]:
+                if  j+1 == row[[zerocount[i]]/9-1][j] == ver[zerocount[i]%9-1][j] == smallsedoku[small[i]][j]:
                     continue
-                    a[zerocount[i]] = j
+                    a[zerocount[i]] = j+1
                     row[zerocount[i]/9-1[i]][j] == ver[zerocount[i]%9-1][j] == smallsedoku[small[i]][j] = true
                     sedouku(depth+1)
-                    row[zerocount[i]/9-1[i]][j] == ver[zerocount[i]%9-1][j] == smallsedoku[small[i]][j] = j
+                    row[zerocount[i]/9-1[i]][j] == ver[zerocount[i]%9-1][j] == smallsedoku[small[i]][j] = j+1
 b = sedoku(0)
 print(a)
 
