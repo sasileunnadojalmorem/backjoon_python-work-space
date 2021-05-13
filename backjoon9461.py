@@ -1,4 +1,4 @@
-dp = [0 for i in range(100)] #테이블
+dp = [0 for i in range(100)] 
 dp[0] = 1
 dp[1] = 1
 dp[2] = 1
