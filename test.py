@@ -1,3 +1,2 @@
-a = {1:-1}
-a[1] =3
-print(a)
+a = 'aaaa'
+for i in 

@@ -17,7 +17,7 @@ while a<=b:
         a = c + 1    
     elif cnt < n:
         b =  c-1
-    print(c)
+    
  
 print(b)
 
