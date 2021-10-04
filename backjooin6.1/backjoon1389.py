@@ -21,4 +21,4 @@ for i in range(len(ans)):
     if ans[i] == min(ans):
         print(i+1)
         break
-    
+#define
