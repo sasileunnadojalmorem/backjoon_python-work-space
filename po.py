@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 
 # 현재시간 기준 날짜
 time2 = datetime.now()
-i = 1
+i = 0
 while i <212:
     # 날짜 변수
     what_day = (time2 - timedelta(days=i)).strftime('%a %b %d %H:%M:%S %Y')
