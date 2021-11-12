@@ -19,6 +19,8 @@ while i <212:
     os.system(
         f'git commit --amend --no-edit --date "{what_day} +0900T"')
     os.system(f'git push origin main')
+    os.system(f'git pull origin main')
+
 
     print(f'{i + 1}회차 완료되었음')
     i+=3
