@@ -4,7 +4,9 @@ from datetime import datetime, timedelta
 
 # 현재시간 기준 날짜
 time2 = datetime.now()
-i = 0
+
+i = 1
+
 while i <212:
     # 날짜 변수
     what_day = (time2 - timedelta(days=i)).strftime('%a %b %d %H:%M:%S %Y')
@@ -19,7 +21,9 @@ while i <212:
     os.system(
         f'git commit --amend --no-edit --date "{what_day} +0900T"')
     os.system(f'git push origin main')
+
     os.system(f'git pull origin main')
+
 
 
     print(f'{i + 1}회차 완료되었음')
